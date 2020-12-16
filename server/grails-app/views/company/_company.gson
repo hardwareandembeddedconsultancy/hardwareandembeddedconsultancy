@@ -1,0 +1,12 @@
+import crm.Company
+
+model {
+    Company company
+}
+json {
+    hal.links(company)
+    id  company.id
+    name company.name
+
+
+}

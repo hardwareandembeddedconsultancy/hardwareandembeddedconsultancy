@@ -1,0 +1,16 @@
+import crm.Customer
+
+model {
+    Customer customer
+}
+json {
+    hal.links(customer)
+    id  customer.id
+    name customer.name
+    email customer.email
+    mobile customer.mobile
+    address customer.address
+    dateCreated customer.dateCreated
+    lastUpdated customer.lastUpdated
+
+}
